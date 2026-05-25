@@ -2,28 +2,73 @@
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
-  <title>DEVLOG | Christopher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devlog | Christopher</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+ 
   <nav>
-    <a href="index.html">首頁</a>
-    <a href="resume.html">履歷</a>
-    <a href="devlog.html">DEVLOG</a>
+    <a href="index.html" class="nav-logo">CJC</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="devlog.html" class="active">Devlog</a></li>
+    </ul>
   </nav>
-
-  <h1>設計日誌 DEVLOG</h1>
-
-  <h2>第 1 週</h2>
-  <p>建立 GitHub 帳號，初始化 repo，部署空白頁面到 GitHub Pages。</p>
-
-  <h2>第 2 週</h2>
-  <p>建立 HTML 架構，新增導覽列、履歷頁面與 DEVLOG 頁面。套用外部樣式表。</p>
-
+ 
+  <div class="devlog-wrapper">
+ 
+    <div class="devlog-header">
+      <h1>Design Devlog 設計日誌</h1>
+      <p>Weekly progress log — what I built, what broke, and what I learned.</p>
+    </div>
+ 
+    <!-- WEEK 1 -->
+    <div class="devlog-entry">
+      <p class="devlog-week">Week 1</p>
+      <h2>Environment Setup 環境建置</h2>
+      <p>Created GitHub account, initialized the repository as <code>Bokk122.github.io</code>, and deployed a blank page to GitHub Pages. Confirmed the live URL was accessible.</p>
+      <div class="ai-log">
+        <strong>AI Usage Log</strong>
+        Used Claude to understand the difference between <code>@import</code> and <code>&lt;link&gt;</code> for attaching stylesheets. Modified the explanation myself to fit the project structure.
+      </div>
+    </div>
+ 
+    <!-- WEEK 2 -->
+    <div class="devlog-entry">
+      <p class="devlog-week">Week 2</p>
+      <h2>Structure & Navigation 結構與導覽</h2>
+      <p>Built the full HTML structure for all three pages — index, resume, and devlog. Added a shared navigation bar and linked an external stylesheet. Tested that all page links worked correctly across files.</p>
+      <div class="ai-log">
+        <strong>AI Usage Log</strong>
+        Asked Claude to explain sticky navigation with <code>position: sticky</code>. Adjusted the z-index and background opacity myself after testing in browser.
+      </div>
+    </div>
+ 
+    <!-- WEEK 3 -->
+    <div class="devlog-entry">
+      <p class="devlog-week">Week 3</p>
+      <h2>Styling & Layout 樣式與版面</h2>
+      <p>Applied the full CSS — typography with Google Fonts, purple color scheme, responsive card grid for projects, and skill groups. Added hover animations on cards and nav underline effect.</p>
+      <div class="ai-log">
+        <strong>AI Usage Log</strong>
+        Used Claude to review CSS pseudo-class order (LoVe/HAte rule). The color values and font pairing decisions were made by me.
+      </div>
+    </div>
+ 
+    <!-- WEEK 4 (placeholder for student to fill) -->
+    <div class="devlog-entry">
+      <p class="devlog-week">Week 4</p>
+      <h2>JavaScript & Interactivity — Coming Soon</h2>
+      <p>This entry will be updated once JavaScript features are added. Planned: smooth scroll, form validation, and project filter.</p>
+    </div>
+ 
+  </div>
+ 
   <footer>
-    <p>© 2026 Christopher John Curro Luarez</p>
+    <p>© 2026 Christopher John Curro Luarez · Kaohsiung, Taiwan</p>
   </footer>
-
+ 
 </body>
 </html>
